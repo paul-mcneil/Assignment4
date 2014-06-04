@@ -1,0 +1,120 @@
+Test Case 1 (BASE CASES)
+
+Test Summary: Valid file argument given
+
+Expected Result: Load the inverted index into the hash table 
+
+*******************************************************************************
+
+Test Case 2 (BASE CASES)
+
+Test Summary: File doesn’t exist argument
+
+
+Expected Result: Print statement error occurred when trying to open file
+
+
+*******************************************************************************
+
+Test Case 3 (BASE CASES)
+
+Test Summary: Empty inverted index file
+
+
+Expected Result: empty file error printed
+
+
+*******************************************************************************
+
+Test Case 4 
+
+Test Summary: Invalid entry given to query menu
+
+
+Expected Result: Invalid Option printed to screen, usage printed
+
+
+*******************************************************************************
+
+Test Case 5
+
+Test Summary: sa or so query with no arguments
+
+
+Expected Result: Prints error “List is empty” and prompts user for another query
+
+
+************************************************************************************
+
+Test Case 6
+
+Test Summary: sa query with two valid arguments
+
+Expected Result: prints files that contain both argument1 and argument 2
+
+************************************************************************************
+
+Test Case 7
+
+Test Summary: so query with two valid arguments
+
+Expected Result: prints files that contain argument1 or argument2
+
+
+************************************************************************************
+
+Test Case 8
+
+Test Summary: sa query with two arguments, 1 valid (exists in inverted index), 1 invalid (does not exist in inverted index)
+
+Expected Result: Print to screen, “One of the words given was not found in loaded dictionary” and the list should be empty
+
+************************************************************************************
+
+Test Case 9
+
+Test Summary: so query with five arguments,  3 valid (exists in inverted index), 2 invalid (does not exist in inverted index)
+
+
+Expected Result: prints only files that contain any of the valid arguments, ignore words that weren't
+
+************************************************************************************
+
+Test Case 10
+
+Test Summary: sa query with 6 valid arguments
+
+Expected Result: Print only the files that contain all 6 words
+
+************************************************************************************
+
+Test Case 11
+
+Test Summary: Wrong number of arguments
+
+Expected Result: Error printed, usage printed
+
+
+************************************************************************************
+
+Test Case 12
+
+Test Summary: File that is not in the correct format, or is missing tags, filenames, word counts etc...
+
+Expected Result: Print error, file given is in incorrect format
+
+************************************************************************************
+
+Test Case 13
+
+Test Summary: Given search query exceeds the size of the input buffer
+
+Expected Result: Prints warning and gives user option to continue
+
+************************************************************************************
+
+Test Case 14
+
+Test Summary: Various other large queries and large files 
+
+Expected Result: Behaved as expected
